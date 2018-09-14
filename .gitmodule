@@ -1,4 +1,4 @@
 
-[submodule "hyde"]
+[submodule "themes/hyde"]
 	path = themes/hyde
 	url = https://github.com/Keats/hyde.git
