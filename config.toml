@@ -1,6 +1,3 @@
-
-base_url = "https://broem.github.io"
-
 theme = "hyde"
 
 compile_sass = true
