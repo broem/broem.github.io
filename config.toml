@@ -1,5 +1,9 @@
 base_url = "https://broem.github.io"
 
+title = "bleached"
+description = "a heaping pile of notes with a sprinkle of musing"
+default_language = "en"
+generate_rss = true
 theme = "hyde"
 
 compile_sass = true
@@ -13,4 +17,9 @@ build_search_index = true
 
 [extra]
 # Put all your custom variables here
+hyde_links = [
+{url = "/", name = "home"},
+{url = "https://github.com/broem", name = "github"}
+
+]
  
