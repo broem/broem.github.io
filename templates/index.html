@@ -10,9 +10,9 @@
       <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
       <!-- CSS -->
-      <link rel="stylesheet" href="print.css" media="print">
-      <link rel="stylesheet" href="poole.css">
-      <link rel="stylesheet" href="hyde.css">
+      <link rel="stylesheet" href="{{ get_url(path="print.css", trailing_slash=false) }}" media="print">
+      <link rel="stylesheet" href="{{ get_url(path="poole.css", trailing_slash=false) }}">
+      <link rel="stylesheet" href="{{ get_url(path="hyde.css", trailing_slash=false) }}">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
 
       {% if config.generate_rss %}
@@ -29,7 +29,7 @@
                 <div class="container {% if config.extra.hyde_sticky %}sidebar-sticky{% endif %}">
                     <div class="sidebar-about">
                         {% block sidebar_about %}
-                            <a href="{{ config.base_url }}"><h1>{{ config.title }}</h1></a>
+                            <a href="{{ config.base_url | safe }}"><h1>{{ config.title }}</h1></a>
                             {% if config.description %}
                             <p class="lead">{{config.description}}</p>
                             {% endif %}
